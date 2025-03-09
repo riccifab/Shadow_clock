@@ -6,7 +6,7 @@ Shadow Clock is a custom LED strip clock project built around an ESP8266 (Adafru
 
 At the beginning of this project, a rendering was created to visualize the final design. See the image below for a preview of the clock design:
 ![Clock v8](https://github.com/user-attachments/assets/3bf70655-fe4f-40c6-b2c7-97066f50ab22)
-
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/140771358?h=e32443dbdc" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
 ## Features
 
 - **Time Synchronization:**  
