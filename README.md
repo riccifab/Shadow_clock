@@ -46,7 +46,7 @@ At the beginning of this project, a rendering was created to visualize the final
 The project uses PlatformIO and is organized into the following files and directories:
 
 ```
-Shadow_clock/
+Shadow_clock/code/
 ├── include/
 │   ├── DisplayHandler.h       # LED display functions (clock and fade)
 │   ├── SensorHandler.h        # Sensor calibration functions
