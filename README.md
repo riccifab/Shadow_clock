@@ -1,6 +1,6 @@
 # Shadow Clock
 
-Shadow Clock is a custom LED strip clock project built around an ESP8266 (Adafruit HUZZAH ESP8266) that displays the current time on a 60-LED circular strip. The project synchronizes time via Wi-Fi using NTP and uses a DS3231 RTC module as a backup when offline. Two Sharp distance sensors (via an ADS1115 ADC) detect proximity to activate the clock display. When no one is nearby, the LED strip gradually fades to a full white brightness.
+Shadow Clock is a custom LED strip clock project built around an ESP8266 (Adafruit HUZZAH ESP8266) that displays the current time on a 60-LED circular strip. The project synchronizes time via Wi-Fi using NTP and uses a DS3231 RTC module as a backup when offline. Two Sharp distance sensors (via an ADS1115 ADC) detect proximity to activate the clock display. When no one cast a shadow, the LED strip gradually fades to a full white brightness.
 
 ## Renderings
 
