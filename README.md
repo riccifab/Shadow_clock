@@ -7,8 +7,6 @@ Shadow Clock is a custom LED strip clock project built around an ESP8266 (Adafru
 At the beginning of this project, a couple of renderings were created to visualize the final design. See the images below for a preview of the clock design:
 ![Clock v8](https://github.com/user-attachments/assets/3bf70655-fe4f-40c6-b2c7-97066f50ab22)
 
-*(Place your rendering images in an "images" folder with the corresponding filenames.)*
-
 ## Features
 
 - **Time Synchronization:**  
@@ -113,4 +111,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [FastLED](http://fastled.io/) for the LED library.
 - [RTClib](https://github.com/adafruit/RTClib) for RTC functionality.
 - [NTPClient](https://github.com/arduino-libraries/NTPClient) for time synchronization.
-- Adafruit for their development boards and sensor libraries.
