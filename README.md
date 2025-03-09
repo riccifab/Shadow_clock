@@ -4,7 +4,7 @@ Shadow Clock is a custom LED strip clock project built around an ESP8266 (Adafru
 
 ## Renderings
 
-At the beginning of this project, a couple of renderings were created to visualize the final design. See the images below for a preview of the clock design:
+At the beginning of this project, a rendering was created to visualize the final design. See the image below for a preview of the clock design:
 ![Clock v8](https://github.com/user-attachments/assets/3bf70655-fe4f-40c6-b2c7-97066f50ab22)
 
 ## Features
@@ -57,8 +57,7 @@ Shadow_clock/
 │   ├── SensorHandler.cpp      # Implementation of sensor calibration
 │   └── TimeSyncHandler.cpp    # Implementation of time synchronization
 ├── images/
-│   ├── rendering1.jpg         # Rendering image 1
-│   └── rendering2.jpg         # Rendering image 2
+│   ├── rendering1.png         # Rendering image 1
 └── platformio.ini             # PlatformIO project configuration
 ```
 
@@ -75,7 +74,7 @@ Shadow_clock/
    Open the project folder in VS Code with the PlatformIO extension installed.
 
 3. **Configure Wi-Fi Credentials:**  
-   Update `ssid` and `password` in `main.cpp` (or better yet, use a configuration file or environment variables).
+   Update `ssid` and `password` in `main.cpp`
 
 4. **Build and Upload:**  
    Use PlatformIO commands to build and upload the firmware to your ESP8266:
