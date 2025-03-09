@@ -67,7 +67,7 @@ Shadow_clock/
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/Shadow_clock.git
+   git clone https://github.com/riccifab/Shadow_clock.git
    cd Shadow_clock
    ```
 
