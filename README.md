@@ -24,7 +24,7 @@ At the beginning of this project, a rendering was created to visualize the final
 ## Hardware Components
 
 - **ESP8266:** Adafruit HUZZAH ESP8266 for processing and Wi-Fi connectivity.
-- **LED Strip:** 60 WS2812B addressable LEDs.
+- **LED Strip:** 60 WS2812B addressable LEDs (1Meter).
 - **RTC Module:** DS3231 for accurate timekeeping.
 - **ADC:** ADS1115 for high-resolution sensor readings.
 - **Distance Sensors:** Two Sharp GP2Y0A21YK0F infrared distance sensors.
