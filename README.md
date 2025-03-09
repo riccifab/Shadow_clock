@@ -19,7 +19,7 @@ At the beginning of this project, a rendering was created to visualize the final
   Displays the current hour and minute on a 60-LED strip. The minute is indicated in blue and the hour in red (or magenta if both overlap). When no one is near, the LEDs gradually fade into full white.
 
 - **Proximity Activation:**  
-  Two Sharp distance sensors (via ADS1115 ADC channels) detect when a user is nearby to activate the clock display.
+  Two Sharp distance sensors (via ADS1115 ADC channels) detect when a user is interact with the clock to activate the clock display.
 
 - **Modular Software Architecture:**  
   Organized code into separate handler files for display, sensor calibration, and time synchronization.
