@@ -21,13 +21,11 @@ CRGB leds[NUM_LEDS]; // Defined here so that it's accessible by DisplayHandler.
 
 RTC_DS3231 rtc;
 Adafruit_ADS1115 ads;
-
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "pool.ntp.org", 0, 60000);  // NTP update interval: 60 sec
 
 unsigned long lastWifiCheck = 0;
 const unsigned long WIFI_CHECK_INTERVAL = 60000;  // 60 seconds
-
 const float THRESHOLD_DISTANCE = 20.0;  // threshold distance in cm
 
 void setup() {
@@ -35,22 +33,37 @@ void setup() {
   
   // Initialize LED strip.
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
-  FastLED.clear();
-  FastLED.show();
+  DisplayHandler::showFullFade(255);
 
   // Begin WiFi (connection will be managed in the loop).
   WiFi.begin(ssid, password);
   Serial.println("Initiating WiFi connection...");
 
   // Initialize RTC.
-  if (!rtc.begin()) {
-    Serial.println("Couldn't find RTC");
-    while (1);
+  int brightness = 0;
+  bool increasing = true;
+  while (!rtc.begin()||!ads.begin()) {
+    // Display the current brightness value.
+    DisplayHandler::showFullFade(brightness);
+    Serial.println("Couldn't find RTC or ADS1015! Retrying...");
+    delay(50); // Adjust delay for smoother/faster fade effect
+    
+    // Update brightness: fade in until max, then fade out.
+    if (increasing) {
+      brightness += 5;  // Increase brightness step
+      if (brightness >= 255) {
+        brightness = 255;
+        increasing = false;
+      }
+    } else {
+      brightness -= 5;  // Decrease brightness step
+      if (brightness <= 0) {
+        brightness = 0;
+        increasing = true;
+      }
+    }
   }
-
-  // Initialize ADS1115.
-  ads.begin();
-
+  DisplayHandler::showFullFade(255);  
   lastWifiCheck = millis();
 }
 
