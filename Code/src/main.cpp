@@ -16,7 +16,7 @@ const char* password = "YOUR_PASSWORD";
 
 // LED configuration
 const int NUM_LEDS = 60;
-#define LED_PIN 2
+#define LED_PIN 5
 CRGB leds[NUM_LEDS]; // Defined here so that it's accessible by DisplayHandler.
 
 RTC_DS3231 rtc;
