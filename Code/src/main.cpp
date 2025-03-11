@@ -105,6 +105,4 @@ void loop() {
     }
     DisplayHandler::showFullFade(brightness);
   }
-  
-  delay(100);  // Adjust loop delay as needed.
 }
