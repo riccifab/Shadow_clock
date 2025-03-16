@@ -113,3 +113,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [FastLED](http://fastled.io/) for the LED library.
 - [RTClib](https://github.com/adafruit/RTClib) for RTC functionality.
 - [NTPClient](https://github.com/arduino-libraries/NTPClient) for time synchronization.
+- [Shadowplay](http://www.breadedescalope.com/index.php/shadowplay-uhr-fuer-einen-salon) design inspiration.
